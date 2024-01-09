@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preentrega Nº2</title>
+    <!--link: CSS-->
+<link rel="stylesheet" href="./style.css">
+
+    <!-- Link: Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,600;0,6..12,700;0,6..12,900;1,6..12,200&family=Nunito:wght@200;300;700&display=swap" rel="stylesheet">
+
+<!-- link CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+</head>
+<body>
+    <body>
+
+        <h1>🛒 Simulador De Carrito De Compras 🛒</h1>
+        <div id="app">
+            <div id="products">
+                <!-- Producto 1 -->
+                <div class="product">
+                    <img src="./images/articulo.png" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p>Precio: $20.00</p>
+                    <p>Stock: 10 unidades</p>
+                    <button onclick="agregarAlCarrito(1, carrito)">Agregar al Carrito</button>
+                </div>
+    
+                <!-- Producto 2 -->
+                <div class="product">
+                    <img src="./images/articulo1.png" alt="Producto 2">
+                    <h3>Producto 2</h3>
+                    <p>Precio: $30.00</p>
+                    <p>Stock: 15 unidades</p>
+                    <button onclick="agregarAlCarrito(2, carrito)">Agregar al Carrito</button>
+                </div>
+    
+                <!-- Producto 3 -->
+                <div class="product">
+                    <img src="./images/articulo2.png" alt="Producto 3">
+                    <h3>Producto 3</h3>
+                    <p>Precio: $15.00</p>
+                    <p>Stock: 8 unidades</p>
+                    <button onclick="agregarAlCarrito(3, carrito)">Agregar al Carrito</button>
+                </div>
+    
+                <!-- Producto 4 -->
+                <div class="product">
+                    <img src="./images/articulo3.png" alt="Producto 4">
+                    <h3>Producto 3</h3>
+                    <p>Precio: $5.00</p>
+                    <p>Stock: 8 unidades</p>
+                    <button onclick="agregarAlCarrito(4, carrito)">Agregar al Carrito</button>
+                </div>
+                
+    
+            </div>
+            <div id="cart">
+                <h2>Carrito de Compras 🛒</h2>
+                <ul id="cart-items">
+                </ul>
+                <p>Total: <span id="cart-total">$0.00</span></p>
+                <button onclick="procesarPago(carrito)">Pagar</button>
+            </div>
+        </div>
+
+        <div class="texto">
+            <h3>Creado por Cristofer Cunto</h3>
+        </div>
+        
+        <!-- Sricpt "JS" -->
+        <script src="script.js"></script>
+    </body>
+</body>
+</html>

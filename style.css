@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#app {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#products {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+#cart {
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart-item {
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#cart-total {
+    font-weight: bold;
+}
+
+.texto{
+    text-align: center;
+} 
+
+
+.texto h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* O ajusta el ancho según tus necesidades */
+    background-color: #f0f0f0; 
+}
